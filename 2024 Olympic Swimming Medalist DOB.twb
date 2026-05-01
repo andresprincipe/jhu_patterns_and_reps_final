@@ -1,0 +1,1680 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.26.0206.0336                               -->
+<workbook original-version='18.1' source-build='2025.3.3 (20253.26.0206.0336)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='olympic_birth_months' inline='true' name='federated.0immylt1hqe04d1el3raq0fh7fk5' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='olympic_birth_months' name='textscan.1jdf1z0183frjc133f07h12qyl9g'>
+            <connection class='textscan' directory='/Users/tammy/Downloads' filename='olympic_birth_months.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1jdf1z0183frjc133f07h12qyl9g' name='olympic_birth_months.csv' table='[olympic_birth_months#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='player' ordinal='0' />
+            <column datatype='integer' name='birth_month' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[olympic_birth_months.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>player</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[player]</local-name>
+            <parent-name>[olympic_birth_months.csv]</parent-name>
+            <remote-alias>player</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[olympic_birth_months.csv_29255992D30544EC9D5EA8BADCFB8457]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>birth_month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[birth_month]</local-name>
+            <parent-name>[olympic_birth_months.csv]</parent-name>
+            <remote-alias>birth_month</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[olympic_birth_months.csv_29255992D30544EC9D5EA8BADCFB8457]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='olympic_birth_months.csv' datatype='table' name='[__tableau_internal_object_id__].[olympic_birth_months.csv_29255992D30544EC9D5EA8BADCFB8457]' role='measure' type='quantitative' />
+      <column caption='Birth Month' datatype='integer' name='[birth_month]' role='dimension' type='quantitative' />
+      <column caption='Player' datatype='string' name='[player]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='olympic_birth_months.csv' id='olympic_birth_months.csv_29255992D30544EC9D5EA8BADCFB8457'>
+            <properties context=''>
+              <relation connection='textscan.1jdf1z0183frjc133f07h12qyl9g' name='olympic_birth_months.csv' table='[olympic_birth_months#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='player' ordinal='0' />
+                  <column datatype='integer' name='birth_month' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='birth_quarters_tableau' inline='true' name='federated.0jobn9y1xvuaqt155rjn6130cesm' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='birth_quarters_tableau' name='textscan.05ifbui058uyvd1cp7zy2088gyqx'>
+            <connection class='textscan' directory='/Users/tammy/Downloads' filename='birth_quarters_tableau.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.05ifbui058uyvd1cp7zy2088gyqx' name='birth_quarters_tableau.csv' table='[birth_quarters_tableau#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='birth_quarter' ordinal='0' />
+            <column datatype='integer' name='athlete_count' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[birth_quarters_tableau.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>birth_quarter</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[birth_quarter]</local-name>
+            <parent-name>[birth_quarters_tableau.csv]</parent-name>
+            <remote-alias>birth_quarter</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[birth_quarters_tableau.csv_77EFA4AD65BB4E57994437989F862B86]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>athlete_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[athlete_count]</local-name>
+            <parent-name>[birth_quarters_tableau.csv]</parent-name>
+            <remote-alias>athlete_count</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[birth_quarters_tableau.csv_77EFA4AD65BB4E57994437989F862B86]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='birth_quarters_tableau.csv' datatype='table' name='[__tableau_internal_object_id__].[birth_quarters_tableau.csv_77EFA4AD65BB4E57994437989F862B86]' role='measure' type='quantitative' />
+      <column caption='Athlete Count' datatype='integer' name='[athlete_count]' role='measure' type='quantitative' />
+      <column caption='Birth Quarter' datatype='string' name='[birth_quarter]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='birth_quarters_tableau.csv' id='birth_quarters_tableau.csv_77EFA4AD65BB4E57994437989F862B86'>
+            <properties context=''>
+              <relation connection='textscan.05ifbui058uyvd1cp7zy2088gyqx' name='birth_quarters_tableau.csv' table='[birth_quarters_tableau#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='birth_quarter' ordinal='0' />
+                  <column datatype='integer' name='athlete_count' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='swimmers_full_dataset_with_dob' inline='true' name='federated.0cm9x4a0vgzlgz11lm3l61w08qgr' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='swimmers_full_dataset_with_dob' name='textscan.0ctdfrl1ahl9j519kcv6c1osgipe'>
+            <connection class='textscan' directory='/Users/tammy/Downloads' filename='swimmers_full_dataset_with_dob.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0ctdfrl1ahl9j519kcv6c1osgipe' name='swimmers_full_dataset_with_dob.csv' table='[swimmers_full_dataset_with_dob#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='athlete' ordinal='0' />
+            <column datatype='string' name='wiki_link' ordinal='1' />
+            <column datatype='string' name='dob' ordinal='2' />
+            <column datatype='string' name='country' ordinal='3' />
+            <column datatype='real' name='birth_month' ordinal='4' />
+            <column datatype='string' name='birth_quarter' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[swimmers_full_dataset_with_dob.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>athlete</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[athlete]</local-name>
+            <parent-name>[swimmers_full_dataset_with_dob.csv]</parent-name>
+            <remote-alias>athlete</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[swimmers_full_dataset_with_dob.csv_743EAE4330D74D6C963BBE3EE8915110]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wiki_link</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[wiki_link]</local-name>
+            <parent-name>[swimmers_full_dataset_with_dob.csv]</parent-name>
+            <remote-alias>wiki_link</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[swimmers_full_dataset_with_dob.csv_743EAE4330D74D6C963BBE3EE8915110]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dob</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[dob]</local-name>
+            <parent-name>[swimmers_full_dataset_with_dob.csv]</parent-name>
+            <remote-alias>dob</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[swimmers_full_dataset_with_dob.csv_743EAE4330D74D6C963BBE3EE8915110]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[swimmers_full_dataset_with_dob.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[swimmers_full_dataset_with_dob.csv_743EAE4330D74D6C963BBE3EE8915110]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>birth_month</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[birth_month]</local-name>
+            <parent-name>[swimmers_full_dataset_with_dob.csv]</parent-name>
+            <remote-alias>birth_month</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[swimmers_full_dataset_with_dob.csv_743EAE4330D74D6C963BBE3EE8915110]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>birth_quarter</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[birth_quarter]</local-name>
+            <parent-name>[swimmers_full_dataset_with_dob.csv]</parent-name>
+            <remote-alias>birth_quarter</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[swimmers_full_dataset_with_dob.csv_743EAE4330D74D6C963BBE3EE8915110]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='swimmers_full_dataset_with_dob.csv' datatype='table' name='[__tableau_internal_object_id__].[swimmers_full_dataset_with_dob.csv_743EAE4330D74D6C963BBE3EE8915110]' role='measure' type='quantitative' />
+      <column caption='Athlete' datatype='string' name='[athlete]' role='dimension' type='nominal' />
+      <column caption='Birth Month' datatype='real' name='[birth_month]' role='dimension' type='quantitative' />
+      <column caption='Birth Quarter' datatype='string' name='[birth_quarter]' role='dimension' type='nominal' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Dob' datatype='string' name='[dob]' role='dimension' type='nominal' />
+      <column caption='Wiki Link' datatype='string' name='[wiki_link]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='swimmers_full_dataset_with_dob.csv' id='swimmers_full_dataset_with_dob.csv_743EAE4330D74D6C963BBE3EE8915110'>
+            <properties context=''>
+              <relation connection='textscan.0ctdfrl1ahl9j519kcv6c1osgipe' name='swimmers_full_dataset_with_dob.csv' table='[swimmers_full_dataset_with_dob#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='athlete' ordinal='0' />
+                  <column datatype='string' name='wiki_link' ordinal='1' />
+                  <column datatype='string' name='dob' ordinal='2' />
+                  <column datatype='string' name='country' ordinal='3' />
+                  <column datatype='real' name='birth_month' ordinal='4' />
+                  <column datatype='string' name='birth_quarter' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='swimmers_full_dataset_with_dob(1)' inline='true' name='federated.1y5rnag16ju4k117k4kj91prnzu5' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='swimmers_full_dataset_with_dob(1)' name='textscan.0omi4js0twnb8a16cejiv0s657a4'>
+            <connection class='textscan' directory='/Users/tammy/Downloads' filename='swimmers_full_dataset_with_dob(1).csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0omi4js0twnb8a16cejiv0s657a4' name='swimmers_full_dataset_with_dob(1).csv' table='[swimmers_full_dataset_with_dob(1)#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='athlete' ordinal='0' />
+            <column datatype='string' name='wiki_link' ordinal='1' />
+            <column datatype='string' name='dob' ordinal='2' />
+            <column datatype='string' name='country' ordinal='3' />
+            <column datatype='real' name='birth_month' ordinal='4' />
+            <column datatype='string' name='birth_quarter' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[swimmers_full_dataset_with_dob(1).csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>athlete</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[athlete]</local-name>
+            <parent-name>[swimmers_full_dataset_with_dob(1).csv]</parent-name>
+            <remote-alias>athlete</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[swimmers_full_dataset_with_dob(1).csv_48B3889F3A294CCD8B35C56FD93A1E8E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wiki_link</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[wiki_link]</local-name>
+            <parent-name>[swimmers_full_dataset_with_dob(1).csv]</parent-name>
+            <remote-alias>wiki_link</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[swimmers_full_dataset_with_dob(1).csv_48B3889F3A294CCD8B35C56FD93A1E8E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dob</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[dob]</local-name>
+            <parent-name>[swimmers_full_dataset_with_dob(1).csv]</parent-name>
+            <remote-alias>dob</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[swimmers_full_dataset_with_dob(1).csv_48B3889F3A294CCD8B35C56FD93A1E8E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[swimmers_full_dataset_with_dob(1).csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[swimmers_full_dataset_with_dob(1).csv_48B3889F3A294CCD8B35C56FD93A1E8E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>birth_month</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[birth_month]</local-name>
+            <parent-name>[swimmers_full_dataset_with_dob(1).csv]</parent-name>
+            <remote-alias>birth_month</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[swimmers_full_dataset_with_dob(1).csv_48B3889F3A294CCD8B35C56FD93A1E8E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>birth_quarter</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[birth_quarter]</local-name>
+            <parent-name>[swimmers_full_dataset_with_dob(1).csv]</parent-name>
+            <remote-alias>birth_quarter</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[swimmers_full_dataset_with_dob(1).csv_48B3889F3A294CCD8B35C56FD93A1E8E]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' default-format='p0.00%' name='[Calculation1]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([athlete]) / TOTAL(COUNT([athlete]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='swimmers_full_dataset_with_dob(1).csv' datatype='table' name='[__tableau_internal_object_id__].[swimmers_full_dataset_with_dob(1).csv_48B3889F3A294CCD8B35C56FD93A1E8E]' role='measure' type='quantitative' />
+      <column caption='Athlete' datatype='string' name='[athlete]' role='dimension' type='nominal' />
+      <column caption='Birth Month' datatype='real' name='[birth_month]' role='dimension' type='quantitative' />
+      <column caption='Birth Quarter' datatype='string' name='[birth_quarter]' role='dimension' type='nominal' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Dob' datatype='string' name='[dob]' role='dimension' type='nominal' />
+      <column caption='Wiki Link' datatype='string' name='[wiki_link]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='swimmers_full_dataset_with_dob(1).csv' id='swimmers_full_dataset_with_dob(1).csv_48B3889F3A294CCD8B35C56FD93A1E8E'>
+            <properties context=''>
+              <relation connection='textscan.0omi4js0twnb8a16cejiv0s657a4' name='swimmers_full_dataset_with_dob(1).csv' table='[swimmers_full_dataset_with_dob(1)#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='athlete' ordinal='0' />
+                  <column datatype='string' name='wiki_link' ordinal='1' />
+                  <column datatype='string' name='dob' ordinal='2' />
+                  <column datatype='string' name='country' ordinal='3' />
+                  <column datatype='real' name='birth_month' ordinal='4' />
+                  <column datatype='string' name='birth_quarter' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='olympic_medals' inline='true' name='federated.0z2pjcm1ovr7sz13t4a8p0iegrja' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='olympic_medals' name='textscan.0l81e3t03bloo6158t7bu1b3kzrr'>
+            <connection class='textscan' directory='/Users/tammy/Downloads' filename='olympic_medals.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+      </connection>
+      <aliases enabled='yes' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph />
+    </datasource>
+    <datasource caption='olympic_medals(3)+' inline='true' name='federated.1azgeet0tqslmz18u3cl805xj52n' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='olympic_medals(3)' name='textscan.0rx2tgu1vcazf319rmxeo0i88rba'>
+            <connection class='textscan' directory='/Users/tammy/Downloads' filename='olympic_medals(3).csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='textscan.0rx2tgu1vcazf319rmxeo0i88rba' name='olympic_medals(3).csv' table='[olympic_medals(3)#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='discipline_title' ordinal='0' />
+              <column datatype='string' name='slug_game' ordinal='1' />
+              <column datatype='string' name='event_title' ordinal='2' />
+              <column datatype='string' name='event_gender' ordinal='3' />
+              <column datatype='string' name='medal_type' ordinal='4' />
+              <column datatype='string' name='participant_type' ordinal='5' />
+              <column datatype='string' name='participant_title' ordinal='6' />
+              <column datatype='string' name='athlete_url' ordinal='7' />
+              <column datatype='string' name='athlete_full_name' ordinal='8' />
+              <column datatype='string' name='country_name' ordinal='9' />
+              <column datatype='string' name='country_code' ordinal='10' />
+              <column datatype='string' name='country_3_letter_code' ordinal='11' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0rx2tgu1vcazf319rmxeo0i88rba' name='swimmers_full_dataset_with_dob(2).csv' table='[swimmers_full_dataset_with_dob(2)#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='athlete' ordinal='0' />
+              <column datatype='string' name='wiki_link' ordinal='1' />
+              <column datatype='string' name='dob' ordinal='2' />
+              <column datatype='string' name='country' ordinal='3' />
+              <column datatype='real' name='birth_month' ordinal='4' />
+              <column datatype='string' name='birth_quarter' ordinal='5' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[olympic_medals(3).csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[swimmers_full_dataset_with_dob(2).csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>discipline_title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[discipline_title]</local-name>
+            <parent-name>[olympic_medals(3).csv]</parent-name>
+            <remote-alias>discipline_title</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[olympic_medals(3).csv_14B5ECCCC5A34844804CBE0664973D97]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>slug_game</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[slug_game]</local-name>
+            <parent-name>[olympic_medals(3).csv]</parent-name>
+            <remote-alias>slug_game</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[olympic_medals(3).csv_14B5ECCCC5A34844804CBE0664973D97]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>event_title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[event_title]</local-name>
+            <parent-name>[olympic_medals(3).csv]</parent-name>
+            <remote-alias>event_title</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[olympic_medals(3).csv_14B5ECCCC5A34844804CBE0664973D97]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>event_gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[event_gender]</local-name>
+            <parent-name>[olympic_medals(3).csv]</parent-name>
+            <remote-alias>event_gender</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[olympic_medals(3).csv_14B5ECCCC5A34844804CBE0664973D97]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>medal_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[medal_type]</local-name>
+            <parent-name>[olympic_medals(3).csv]</parent-name>
+            <remote-alias>medal_type</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[olympic_medals(3).csv_14B5ECCCC5A34844804CBE0664973D97]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>participant_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[participant_type]</local-name>
+            <parent-name>[olympic_medals(3).csv]</parent-name>
+            <remote-alias>participant_type</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[olympic_medals(3).csv_14B5ECCCC5A34844804CBE0664973D97]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>participant_title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[participant_title]</local-name>
+            <parent-name>[olympic_medals(3).csv]</parent-name>
+            <remote-alias>participant_title</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[olympic_medals(3).csv_14B5ECCCC5A34844804CBE0664973D97]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>athlete_url</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[athlete_url]</local-name>
+            <parent-name>[olympic_medals(3).csv]</parent-name>
+            <remote-alias>athlete_url</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[olympic_medals(3).csv_14B5ECCCC5A34844804CBE0664973D97]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>athlete_full_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[athlete_full_name]</local-name>
+            <parent-name>[olympic_medals(3).csv]</parent-name>
+            <remote-alias>athlete_full_name</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[olympic_medals(3).csv_14B5ECCCC5A34844804CBE0664973D97]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country_name]</local-name>
+            <parent-name>[olympic_medals(3).csv]</parent-name>
+            <remote-alias>country_name</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[olympic_medals(3).csv_14B5ECCCC5A34844804CBE0664973D97]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country_code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country_code]</local-name>
+            <parent-name>[olympic_medals(3).csv]</parent-name>
+            <remote-alias>country_code</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[olympic_medals(3).csv_14B5ECCCC5A34844804CBE0664973D97]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country_3_letter_code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country_3_letter_code]</local-name>
+            <parent-name>[olympic_medals(3).csv]</parent-name>
+            <remote-alias>country_3_letter_code</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[olympic_medals(3).csv_14B5ECCCC5A34844804CBE0664973D97]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>athlete</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[athlete]</local-name>
+            <parent-name>[swimmers_full_dataset_with_dob(2).csv]</parent-name>
+            <remote-alias>athlete</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[swimmers_full_dataset_with_dob(2).csv_C7712EB490334DB48B2B8B89143EA8BE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wiki_link</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[wiki_link]</local-name>
+            <parent-name>[swimmers_full_dataset_with_dob(2).csv]</parent-name>
+            <remote-alias>wiki_link</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[swimmers_full_dataset_with_dob(2).csv_C7712EB490334DB48B2B8B89143EA8BE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dob</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[dob]</local-name>
+            <parent-name>[swimmers_full_dataset_with_dob(2).csv]</parent-name>
+            <remote-alias>dob</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[swimmers_full_dataset_with_dob(2).csv_C7712EB490334DB48B2B8B89143EA8BE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[swimmers_full_dataset_with_dob(2).csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[swimmers_full_dataset_with_dob(2).csv_C7712EB490334DB48B2B8B89143EA8BE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>birth_month</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[birth_month]</local-name>
+            <parent-name>[swimmers_full_dataset_with_dob(2).csv]</parent-name>
+            <remote-alias>birth_month</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[swimmers_full_dataset_with_dob(2).csv_C7712EB490334DB48B2B8B89143EA8BE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>birth_quarter</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[birth_quarter]</local-name>
+            <parent-name>[swimmers_full_dataset_with_dob(2).csv]</parent-name>
+            <remote-alias>birth_quarter</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[swimmers_full_dataset_with_dob(2).csv_C7712EB490334DB48B2B8B89143EA8BE]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='olympic_medals(3).csv' datatype='table' name='[__tableau_internal_object_id__].[olympic_medals(3).csv_14B5ECCCC5A34844804CBE0664973D97]' role='measure' type='quantitative' />
+      <column caption='swimmers_full_dataset_with_dob(2).csv' datatype='table' name='[__tableau_internal_object_id__].[swimmers_full_dataset_with_dob(2).csv_C7712EB490334DB48B2B8B89143EA8BE]' role='measure' type='quantitative' />
+      <column caption='Athlete' datatype='string' name='[athlete]' role='dimension' type='nominal' />
+      <column caption='Athlete Full Name' datatype='string' name='[athlete_full_name]' role='dimension' type='nominal' />
+      <column caption='Athlete Url' datatype='string' name='[athlete_url]' role='dimension' type='nominal' />
+      <column caption='Birth Month' datatype='real' name='[birth_month]' role='dimension' type='quantitative' />
+      <column caption='Birth Quarter' datatype='string' name='[birth_quarter]' role='dimension' type='nominal' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Country 3 Letter Code' datatype='string' name='[country_3_letter_code]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Country Code' datatype='string' name='[country_code]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Country Name' datatype='string' name='[country_name]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Discipline Title' datatype='string' name='[discipline_title]' role='dimension' type='nominal' />
+      <column caption='Dob' datatype='string' name='[dob]' role='dimension' type='nominal' />
+      <column caption='Event Gender' datatype='string' name='[event_gender]' role='dimension' type='nominal' />
+      <column caption='Event Title' datatype='string' name='[event_title]' role='dimension' type='nominal' />
+      <column caption='Medal Type' datatype='string' name='[medal_type]' role='dimension' type='nominal' />
+      <column caption='Participant Title' datatype='string' name='[participant_title]' role='dimension' type='nominal' />
+      <column caption='Participant Type' datatype='string' name='[participant_type]' role='dimension' type='nominal' />
+      <column caption='Slug Game' datatype='string' name='[slug_game]' role='dimension' type='nominal' />
+      <column caption='Wiki Link' datatype='string' name='[wiki_link]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='olympic_medals(3).csv' id='olympic_medals(3).csv_14B5ECCCC5A34844804CBE0664973D97'>
+            <properties context=''>
+              <relation connection='textscan.0rx2tgu1vcazf319rmxeo0i88rba' name='olympic_medals(3).csv' table='[olympic_medals(3)#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='discipline_title' ordinal='0' />
+                  <column datatype='string' name='slug_game' ordinal='1' />
+                  <column datatype='string' name='event_title' ordinal='2' />
+                  <column datatype='string' name='event_gender' ordinal='3' />
+                  <column datatype='string' name='medal_type' ordinal='4' />
+                  <column datatype='string' name='participant_type' ordinal='5' />
+                  <column datatype='string' name='participant_title' ordinal='6' />
+                  <column datatype='string' name='athlete_url' ordinal='7' />
+                  <column datatype='string' name='athlete_full_name' ordinal='8' />
+                  <column datatype='string' name='country_name' ordinal='9' />
+                  <column datatype='string' name='country_code' ordinal='10' />
+                  <column datatype='string' name='country_3_letter_code' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='swimmers_full_dataset_with_dob(2).csv' id='swimmers_full_dataset_with_dob(2).csv_C7712EB490334DB48B2B8B89143EA8BE'>
+            <properties context=''>
+              <relation connection='textscan.0rx2tgu1vcazf319rmxeo0i88rba' name='swimmers_full_dataset_with_dob(2).csv' table='[swimmers_full_dataset_with_dob(2)#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='athlete' ordinal='0' />
+                  <column datatype='string' name='wiki_link' ordinal='1' />
+                  <column datatype='string' name='dob' ordinal='2' />
+                  <column datatype='string' name='country' ordinal='3' />
+                  <column datatype='real' name='birth_month' ordinal='4' />
+                  <column datatype='string' name='birth_quarter' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[athlete_full_name]' />
+              <expression op='[athlete]' />
+            </expression>
+            <first-end-point object-id='olympic_medals(3).csv_14B5ECCCC5A34844804CBE0664973D97' />
+            <second-end-point object-id='swimmers_full_dataset_with_dob(2).csv_C7712EB490334DB48B2B8B89143EA8BE' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+    <datasource caption='swimmers_full_dataset_with_dob(2)' inline='true' name='federated.1ysnf5v1l9e5gr19uqfd91afl7e2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='swimmers_full_dataset_with_dob(2)' name='textscan.00z79f50tp8f4b13t5ugs091f31c'>
+            <connection class='textscan' directory='/Users/tammy/Downloads' filename='swimmers_full_dataset_with_dob(2).csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='textscan.00z79f50tp8f4b13t5ugs091f31c' name='swimmers_full_dataset_with_dob(2).csv' table='[swimmers_full_dataset_with_dob(2)#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='athlete' ordinal='0' />
+              <column datatype='string' name='wiki_link' ordinal='1' />
+              <column datatype='string' name='dob' ordinal='2' />
+              <column datatype='string' name='country' ordinal='3' />
+              <column datatype='real' name='birth_month' ordinal='4' />
+              <column datatype='string' name='birth_quarter' ordinal='5' />
+            </columns>
+          </relation>
+          <relation connection='textscan.00z79f50tp8f4b13t5ugs091f31c' name='olympic_medals(3).csv' table='[olympic_medals(3)#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='discipline_title' ordinal='0' />
+              <column datatype='string' name='slug_game' ordinal='1' />
+              <column datatype='string' name='event_title' ordinal='2' />
+              <column datatype='string' name='event_gender' ordinal='3' />
+              <column datatype='string' name='medal_type' ordinal='4' />
+              <column datatype='string' name='participant_type' ordinal='5' />
+              <column datatype='string' name='participant_title' ordinal='6' />
+              <column datatype='string' name='athlete_url' ordinal='7' />
+              <column datatype='string' name='athlete_full_name' ordinal='8' />
+              <column datatype='string' name='country_name' ordinal='9' />
+              <column datatype='string' name='country_code' ordinal='10' />
+              <column datatype='string' name='country_3_letter_code' ordinal='11' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[swimmers_full_dataset_with_dob(2).csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[olympic_medals(3).csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>athlete</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[athlete]</local-name>
+            <parent-name>[swimmers_full_dataset_with_dob(2).csv]</parent-name>
+            <remote-alias>athlete</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[swimmers_full_dataset_with_dob(2).csv_3DC771FB781A4567AEAB37841B6B4C2C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wiki_link</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[wiki_link]</local-name>
+            <parent-name>[swimmers_full_dataset_with_dob(2).csv]</parent-name>
+            <remote-alias>wiki_link</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[swimmers_full_dataset_with_dob(2).csv_3DC771FB781A4567AEAB37841B6B4C2C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dob</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[dob]</local-name>
+            <parent-name>[swimmers_full_dataset_with_dob(2).csv]</parent-name>
+            <remote-alias>dob</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[swimmers_full_dataset_with_dob(2).csv_3DC771FB781A4567AEAB37841B6B4C2C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[swimmers_full_dataset_with_dob(2).csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[swimmers_full_dataset_with_dob(2).csv_3DC771FB781A4567AEAB37841B6B4C2C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>birth_month</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[birth_month]</local-name>
+            <parent-name>[swimmers_full_dataset_with_dob(2).csv]</parent-name>
+            <remote-alias>birth_month</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[swimmers_full_dataset_with_dob(2).csv_3DC771FB781A4567AEAB37841B6B4C2C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>birth_quarter</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[birth_quarter]</local-name>
+            <parent-name>[swimmers_full_dataset_with_dob(2).csv]</parent-name>
+            <remote-alias>birth_quarter</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[swimmers_full_dataset_with_dob(2).csv_3DC771FB781A4567AEAB37841B6B4C2C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>discipline_title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[discipline_title]</local-name>
+            <parent-name>[olympic_medals(3).csv]</parent-name>
+            <remote-alias>discipline_title</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[olympic_medals(3).csv_BA95933AC8374EC0A119CE9BF9495E9D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>slug_game</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[slug_game]</local-name>
+            <parent-name>[olympic_medals(3).csv]</parent-name>
+            <remote-alias>slug_game</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[olympic_medals(3).csv_BA95933AC8374EC0A119CE9BF9495E9D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>event_title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[event_title]</local-name>
+            <parent-name>[olympic_medals(3).csv]</parent-name>
+            <remote-alias>event_title</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[olympic_medals(3).csv_BA95933AC8374EC0A119CE9BF9495E9D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>event_gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[event_gender]</local-name>
+            <parent-name>[olympic_medals(3).csv]</parent-name>
+            <remote-alias>event_gender</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[olympic_medals(3).csv_BA95933AC8374EC0A119CE9BF9495E9D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>medal_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[medal_type]</local-name>
+            <parent-name>[olympic_medals(3).csv]</parent-name>
+            <remote-alias>medal_type</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[olympic_medals(3).csv_BA95933AC8374EC0A119CE9BF9495E9D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>participant_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[participant_type]</local-name>
+            <parent-name>[olympic_medals(3).csv]</parent-name>
+            <remote-alias>participant_type</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[olympic_medals(3).csv_BA95933AC8374EC0A119CE9BF9495E9D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>participant_title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[participant_title]</local-name>
+            <parent-name>[olympic_medals(3).csv]</parent-name>
+            <remote-alias>participant_title</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[olympic_medals(3).csv_BA95933AC8374EC0A119CE9BF9495E9D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>athlete_url</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[athlete_url]</local-name>
+            <parent-name>[olympic_medals(3).csv]</parent-name>
+            <remote-alias>athlete_url</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[olympic_medals(3).csv_BA95933AC8374EC0A119CE9BF9495E9D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>athlete_full_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[athlete_full_name]</local-name>
+            <parent-name>[olympic_medals(3).csv]</parent-name>
+            <remote-alias>athlete_full_name</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[olympic_medals(3).csv_BA95933AC8374EC0A119CE9BF9495E9D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country_name]</local-name>
+            <parent-name>[olympic_medals(3).csv]</parent-name>
+            <remote-alias>country_name</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[olympic_medals(3).csv_BA95933AC8374EC0A119CE9BF9495E9D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country_code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country_code]</local-name>
+            <parent-name>[olympic_medals(3).csv]</parent-name>
+            <remote-alias>country_code</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[olympic_medals(3).csv_BA95933AC8374EC0A119CE9BF9495E9D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country_3_letter_code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country_3_letter_code]</local-name>
+            <parent-name>[olympic_medals(3).csv]</parent-name>
+            <remote-alias>country_3_letter_code</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[olympic_medals(3).csv_BA95933AC8374EC0A119CE9BF9495E9D]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='olympic_medals(3).csv' datatype='table' name='[__tableau_internal_object_id__].[olympic_medals(3).csv_BA95933AC8374EC0A119CE9BF9495E9D]' role='measure' type='quantitative' />
+      <column caption='swimmers_full_dataset_with_dob(2).csv' datatype='table' name='[__tableau_internal_object_id__].[swimmers_full_dataset_with_dob(2).csv_3DC771FB781A4567AEAB37841B6B4C2C]' role='measure' type='quantitative' />
+      <column caption='Athlete' datatype='string' name='[athlete]' role='dimension' type='nominal' />
+      <column caption='Athlete Full Name' datatype='string' name='[athlete_full_name]' role='dimension' type='nominal' />
+      <column caption='Athlete Url' datatype='string' name='[athlete_url]' role='dimension' type='nominal' />
+      <column caption='Birth Month' datatype='real' name='[birth_month]' role='dimension' type='quantitative' />
+      <column caption='Birth Quarter' datatype='string' name='[birth_quarter]' role='dimension' type='nominal' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Country 3 Letter Code' datatype='string' name='[country_3_letter_code]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Country Code' datatype='string' name='[country_code]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Country Name' datatype='string' name='[country_name]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Discipline Title' datatype='string' name='[discipline_title]' role='dimension' type='nominal' />
+      <column caption='Dob' datatype='string' name='[dob]' role='dimension' type='nominal' />
+      <column caption='Event Gender' datatype='string' name='[event_gender]' role='dimension' type='nominal' />
+      <column caption='Event Title' datatype='string' name='[event_title]' role='dimension' type='nominal' />
+      <column caption='Medal Type' datatype='string' name='[medal_type]' role='dimension' type='nominal' />
+      <column caption='Participant Title' datatype='string' name='[participant_title]' role='dimension' type='nominal' />
+      <column caption='Participant Type' datatype='string' name='[participant_type]' role='dimension' type='nominal' />
+      <column caption='Slug Game' datatype='string' name='[slug_game]' role='dimension' type='nominal' />
+      <column caption='Wiki Link' datatype='string' name='[wiki_link]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='olympic_medals(3).csv' id='olympic_medals(3).csv_BA95933AC8374EC0A119CE9BF9495E9D'>
+            <properties context=''>
+              <relation connection='textscan.00z79f50tp8f4b13t5ugs091f31c' name='olympic_medals(3).csv' table='[olympic_medals(3)#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='discipline_title' ordinal='0' />
+                  <column datatype='string' name='slug_game' ordinal='1' />
+                  <column datatype='string' name='event_title' ordinal='2' />
+                  <column datatype='string' name='event_gender' ordinal='3' />
+                  <column datatype='string' name='medal_type' ordinal='4' />
+                  <column datatype='string' name='participant_type' ordinal='5' />
+                  <column datatype='string' name='participant_title' ordinal='6' />
+                  <column datatype='string' name='athlete_url' ordinal='7' />
+                  <column datatype='string' name='athlete_full_name' ordinal='8' />
+                  <column datatype='string' name='country_name' ordinal='9' />
+                  <column datatype='string' name='country_code' ordinal='10' />
+                  <column datatype='string' name='country_3_letter_code' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='swimmers_full_dataset_with_dob(2).csv' id='swimmers_full_dataset_with_dob(2).csv_3DC771FB781A4567AEAB37841B6B4C2C'>
+            <properties context=''>
+              <relation connection='textscan.00z79f50tp8f4b13t5ugs091f31c' name='swimmers_full_dataset_with_dob(2).csv' table='[swimmers_full_dataset_with_dob(2)#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='athlete' ordinal='0' />
+                  <column datatype='string' name='wiki_link' ordinal='1' />
+                  <column datatype='string' name='dob' ordinal='2' />
+                  <column datatype='string' name='country' ordinal='3' />
+                  <column datatype='real' name='birth_month' ordinal='4' />
+                  <column datatype='string' name='birth_quarter' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[athlete]' />
+              <expression op='[athlete_full_name]' />
+            </expression>
+            <first-end-point object-id='swimmers_full_dataset_with_dob(2).csv_3DC771FB781A4567AEAB37841B6B4C2C' />
+            <second-end-point object-id='olympic_medals(3).csv_BA95933AC8374EC0A119CE9BF9495E9D' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+    <datasource caption='Sayfa1 (fm23data)' inline='true' name='federated.109r6nk0cs8epl1a47y2e0rck83m' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='fm23data' name='excel-direct.0qf6bra1f7wm8a16p0a071279eos'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/tammy/Downloads/archive(5)/fm23data.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='olympic_birth_months' name='textscan.1py28xn08gpdy415cjnle0wqlv3o'>
+            <connection class='textscan' directory='/Users/tammy/Downloads' filename='olympic_birth_months.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Birth Month (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[DoB - Split 2]' new-bin='true'>
+          <bin default-name='false' value='&quot;Q1&quot;'>
+            <value>&quot;1&quot;</value>
+            <value>&quot;2&quot;</value>
+            <value>&quot;3&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Q2&quot;'>
+            <value>&quot;4&quot;</value>
+            <value>&quot;5&quot;</value>
+            <value>&quot;6&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Q3&quot;'>
+            <value>&quot;7&quot;</value>
+            <value>&quot;8&quot;</value>
+            <value>&quot;9&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Q4&quot;'>
+            <value>&quot;10&quot;</value>
+            <value>&quot;11&quot;</value>
+            <value>&quot;12&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column caption='Do B - Split 1' datatype='string' name='[DoB - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.109r6nk0cs8epl1a47y2e0rck83m].[DoB]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [DoB], &quot;/&quot;, 1 ) )' />
+      </column>
+      <column caption='Birth Month' datatype='string' name='[DoB - Split 2]' role='dimension' type='nominal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.109r6nk0cs8epl1a47y2e0rck83m].[DoB]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [DoB], &quot;/&quot;, 2 ) )' />
+      </column>
+      <column caption='Do B - Split 3' datatype='string' name='[DoB - Split 3]' role='dimension' type='nominal' user:SplitFieldIndex='3' user:SplitFieldOrigin='[federated.109r6nk0cs8epl1a47y2e0rck83m].[DoB]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( SPLIT( [DoB], &quot;/&quot;, 3 ), &quot;(&quot;, 1 ) )' />
+      </column>
+      <column caption='Do B - Split 4' datatype='string' name='[DoB - Split 4]' role='dimension' type='nominal' user:SplitFieldIndex='4' user:SplitFieldOrigin='[federated.109r6nk0cs8epl1a47y2e0rck83m].[DoB]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( SPLIT( SPLIT( [DoB], &quot;/&quot;, 3 ), &quot;(&quot;, 2 ), &quot;years&quot;, 1 ) )' />
+      </column>
+      <column caption='Do B' datatype='string' name='[DoB]' role='dimension' type='nominal' />
+      <column caption='Players' datatype='string' name='[Name]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph />
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='2024 Olympic Swimming Medalists'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>2024 Olympic Swimming Medalists</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='swimmers_full_dataset_with_dob(2)' name='federated.1ysnf5v1l9e5gr19uqfd91afl7e2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ysnf5v1l9e5gr19uqfd91afl7e2'>
+            <column caption='Athlete' datatype='string' name='[athlete]' role='dimension' type='nominal' />
+            <column caption='Birth Quarter' datatype='string' name='[birth_quarter]' role='dimension' type='nominal' />
+            <column-instance column='[birth_quarter]' derivation='None' name='[none:birth_quarter:nk]' pivot='key' type='nominal' />
+            <column-instance column='[athlete]' derivation='CountD' name='[pcto:ctd:athlete:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ysnf5v1l9e5gr19uqfd91afl7e2].[none:birth_quarter:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:birth_quarter:nk]' member='&quot;q1&quot;' />
+              <groupfilter function='member' level='[none:birth_quarter:nk]' member='&quot;q2&quot;' />
+              <groupfilter function='member' level='[none:birth_quarter:nk]' member='&quot;q3&quot;' />
+              <groupfilter function='member' level='[none:birth_quarter:nk]' member='&quot;q4&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1ysnf5v1l9e5gr19uqfd91afl7e2].[none:birth_quarter:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <reference-line axis-column='[federated.1ysnf5v1l9e5gr19uqfd91afl7e2].[pcto:ctd:athlete:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label-type='automatic' scope='per-pane' value='0.25' value-column='[federated.1ysnf5v1l9e5gr19uqfd91afl7e2].[pcto:ctd:athlete:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#d3b348' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ysnf5v1l9e5gr19uqfd91afl7e2].[pcto:ctd:athlete:qk]</rows>
+        <cols>[federated.1ysnf5v1l9e5gr19uqfd91afl7e2].[none:birth_quarter:nk]</cols>
+      </table>
+      <simple-id uuid='{88B5B02F-61FD-464A-83AF-F6BA0F79ECDA}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='177'>
+    <window class='worksheet' maximized='true' name='2024 Olympic Swimming Medalists'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ysnf5v1l9e5gr19uqfd91afl7e2].[none:athlete:nk]</field>
+            <field>[federated.1ysnf5v1l9e5gr19uqfd91afl7e2].[none:athlete_full_name:nk]</field>
+            <field>[federated.1ysnf5v1l9e5gr19uqfd91afl7e2].[none:birth_quarter:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{7AD2F889-FA04-4708-B8EF-5AC0BDA341D0}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='2024 Olympic Swimming Medalists' width='384'>
+      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
+      /wAu3dVrenNsHQAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
